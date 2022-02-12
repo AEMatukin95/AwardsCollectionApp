@@ -21,6 +21,8 @@ struct AwardsView: View {
                     award.awardView
                     Text(award.title)
                 }
+                // Не понимаю для чего нужен тут .padding(), если его убираем, они остаються на этом же месте, никуда ни уезжает ничего. Но оставлю, как в ТЗ
+                .padding()
                 .frame(width: itemSize, height: itemSize)
             }
             .navigationBarTitle("Your awards: \(activeAwards.count)")
